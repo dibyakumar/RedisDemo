@@ -1,0 +1,15 @@
+package com.redis.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class UserDao {
+	
+	@Autowired
+	private RedisTemplate<String, Object> redisTemplet;
+	
+	private final String KEY = "USER";
+	
+}
